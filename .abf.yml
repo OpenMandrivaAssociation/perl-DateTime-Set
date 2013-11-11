@@ -1,4 +1,5 @@
 removed_sources:
   DateTime-Set-0.30.tar.gz: 95575905bc953866e96e83e608034052560c2bfd
-sources:
   DateTime-Set-0.31.tar.gz: be95802f490a3291d60efeff4f154348b8e8ba5a
+sources:
+  DateTime-Set-0.33.tar.gz: 34feb37041e35106e0cd5633350e380e21925715

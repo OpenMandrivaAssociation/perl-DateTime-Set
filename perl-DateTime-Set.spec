@@ -1,15 +1,15 @@
 %define upstream_name    DateTime-Set
-%define upstream_version 0.31
+%define upstream_version 0.33
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version 0.31
+Version:	%perl_convert_version %{upstream_version}
 Release:	1
 
 Summary:	Extends Set::Infinite with recurrence functions
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/DateTime/DateTime-Set-0.31.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/DateTime/DateTime-Set-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
 BuildRequires:	perl(DateTime)
@@ -67,4 +67,5 @@ perl Makefile.PL INSTALLDIRS=vendor
 
 * Thu May 06 2010 cpan2dist 0.28-1mdv
 - initial mdv release, generated with cpan2dist
+
 
