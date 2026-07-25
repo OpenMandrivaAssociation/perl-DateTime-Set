@@ -1,15 +1,15 @@
 %define upstream_name    DateTime-Set
-%define upstream_version 0.3400
+%define upstream_version 0.3900
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	3
+Version:	%{upstream_version}
+Release:	1
 
 Summary:	Extends Set::Infinite with recurrence functions
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/DateTime/DateTime-Set-%{upstream_version}.tar.gz
+Url:		https://github.com/fglock/DateTime-Set
+Source0:	https://cpan.metacpan.org/authors/id/F/FG/FGLOCK/DateTime-Set-%{upstream_version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
