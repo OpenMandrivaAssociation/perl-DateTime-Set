@@ -1,15 +1,13 @@
 %define upstream_name    DateTime-Set
-%define upstream_version 0.3900
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	1
+Version:	0.3900
+Release:	2
 
 Summary:	Extends Set::Infinite with recurrence functions
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://github.com/fglock/DateTime-Set
-Source0:	https://cpan.metacpan.org/authors/id/F/FG/FGLOCK/DateTime-Set-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/F/FG/FGLOCK/DateTime-Set-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -35,7 +33,7 @@ beginning of time until the end of time", or "every Wednesday after
 and 2004-01-07".
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
